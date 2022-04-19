@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    //MARK: -Property
+    @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
+    
+    //MARK: BODY
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            VStack(spacing: 20) {
+                Text("Onboarding")
+                    .font(.largeTitle)
+                
+            }
+        }
+       
+       
     }
 }
 
